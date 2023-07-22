@@ -1,0 +1,46 @@
+.registerForm {
+    max-width: 600px;
+    min-width: 400px;
+    margin: 0 auto;
+  }
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .label {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: 600;
+  }
+  
+  .input {
+    padding: 8px;
+    font-size: 24px;
+    border-radius: 12px;
+    color: white;
+    border: 2px solid #3a3a39;
+    background-color: #979695;
+    box-shadow: rgba(56, 88, 73, 0.25) 0px 30px 60px -12px inset,
+      rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  }
+  
+  .formBtn {
+    padding: 8px;
+    font-size: 24px;
+    font-weight: 600;
+    color: white;
+    background-color: rgb(61, 112, 81);
+    border-color: rgb(43, 70, 48);
+    border-radius: 12px;
+    cursor: pointer;
+  }
+  
+  .formBtn:hover {
+    background-color: rgb(91, 186, 110);
+    border-color: rgb(98, 109, 109);
+  }

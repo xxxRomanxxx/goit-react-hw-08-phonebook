@@ -1,0 +1,25 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 16px;
+    margin-bottom: 16px;
+    border-bottom: 2px solid rgb(0, 0, 0);
+    height: 60px;
+  }
+  
+  .nav, .menu {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+  }
+  
+  a {
+    font-size: 24px;
+    font-weight: 500;
+    color: rgb(99, 113, 35)
+  }
+  
+  a:hover {
+    color: rgb(43, 70, 48);
+  }

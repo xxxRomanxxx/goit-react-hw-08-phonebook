@@ -1,12 +1,6 @@
 import { createSlice } from '@reduxjs/toolkit';
 import { nanoid } from 'nanoid';
-import { addContact, deleteContact, fetchContacts } from './operations';
-
-const initialState = {
-  items: [],
-  isLoading: false,
-  error: null,
-};
+import { addContact, deleteContact, fetchContacts, logout } from './operations';
 
 const handlePending = state => {
   state.isLoading = true;
@@ -19,7 +13,11 @@ const handleRejected = (state, action) => {
 
 const contactsSlice = createSlice({
   name: 'contacts',
-  initialState,
+  initialState: {
+    items: [],
+    isLoading: false,
+    error: null,
+  },
 
   extraReducers: builder => {
     builder
@@ -43,7 +41,12 @@ const contactsSlice = createSlice({
         state.error = null;
         state.items = state.items.filter(({ id }) => id !== action.payload.id);
       })
-      .addCase(deleteContact.rejected, handleRejected);
+      .addCase(deleteContact.rejected, handleRejected)
+      .addCase(logout.fulfilled, state => {
+        state.items = [];
+        state.error = null;
+        state.isLoggedIn = false;
+      });
   },
 });
 

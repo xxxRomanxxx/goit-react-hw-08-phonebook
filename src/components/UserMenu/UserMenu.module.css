@@ -1,0 +1,27 @@
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+  }
+  
+  .username {
+    font-weight: 700;
+  }
+  
+  .button {
+    text-align: center;
+    margin-left: 16px;
+    max-height: 100px;
+    font-size: 14px;
+    font-weight: 400;
+    color: white;
+    background-color: rgb(99, 113, 35);
+    border-color: rgb(43, 70, 48);
+    border-radius: 6px;
+  }
+  
+  .button:hover {
+    background-color: rgb(43, 70, 48);
+    border-color: rgb(43, 70, 48);
+  }

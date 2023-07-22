@@ -13,7 +13,8 @@
 
 .form__input {
     display: flex;
-    font-size:30px
+    font-size:30px;
+    border: 2px solid #3a3a39;
 }
 
 .form__button {
@@ -23,7 +24,13 @@
     padding: 10px;
     margin-left: auto;
     margin-right: auto;
-    background-color: black;
     color: white;
+    background-color: rgb(61, 112, 81);
+    border-color: rgb(43, 70, 48);
     font-size: 24px;
+}
+
+.form__button:hover {
+    background-color: rgb(91, 186, 110);
+    border-color: rgb(98, 109, 109);
 }
